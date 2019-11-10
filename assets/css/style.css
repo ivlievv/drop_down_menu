@@ -1,14 +1,50 @@
-.nanItem{
-    display: inline-block;
+a, a:active, a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
 }
 
+
+.nanItem{
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+}
+.navMenu{
+    color: white;
+    font-family: sans-serif;
+    font-size: 0;
+}
 .navLink{
-    background-color:#4C996B ;
+    color: white;
+    background-color:#4C996B;
+    padding: 20px;
+    box-sizing: border-box;
+    display: block;
+    text-transform: capitalize;
+    width: 200px;
+    text-overflow: ellipsis;
+    text-align: center;
+    border: 1px solid #3F8058;
 }
 
 .navLink:hover{
     background-color: #3F8058;
+    color: white;
 }
 .subMenu{
     display: none;
+    position: absolute;
+}
+
+.dropDownMenu{
+    max-height: 0;
+    top:100%;
+    left: 0;
+}
+.dropRightMenu{
+    top: 0;
+    left: 100%;
+}
+.nanItem:hover > .subMenu{
+    display: block;
 }
